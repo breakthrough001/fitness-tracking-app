@@ -1,0 +1,30 @@
+.dates {
+    max-width: 100%;
+}
+
+input {
+    border-radius: 0 !important;
+    text-align: right;
+    border: 1px solid #000;
+}
+
+.col-input {
+    width: 10%;
+    text-align: right;
+    border: 1px solid #000;
+}
+
+.date-column {
+    width: 20%;
+    border: 1px solid #000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
