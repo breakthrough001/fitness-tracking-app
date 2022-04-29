@@ -15,8 +15,8 @@ userWeight.addEventListener('keyup', averageWeight);
 
 // Functions
 function averageWeight(event) {
-    let userWeightArr = [];
     // push user values into array
+    let userWeightArr = [];
 
     userWeightArr.push(parseInt(userWeight.value));
     userWeightArr.push(parseInt(userWeight2.value));
@@ -31,8 +31,10 @@ function averageWeight(event) {
     const sum = userWeightArr.reduce((a, b) => a + b, 0);
     console.log(sum);
     // Average all numbers by array.length
-    const average = sum / userWeightArr.length;
+    const average = Math.round(sum / userWeightArr.length);
     console.log(average);
     // Display average on screen to user
     userWeightInput.innerText = average;
 }
+
+function pushValue() {}
